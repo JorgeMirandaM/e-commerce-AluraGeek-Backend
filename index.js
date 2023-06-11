@@ -17,7 +17,7 @@ require('./src/Database/database');
 app.use(
     cors({
         credentials: true,
-        origin:['https://jorgemirandam.github.io/e-commerce-AluraGeek-Frontend']
+        origin:['https://jorgemirandam.github.io/e-commerce-AluraGeek-Frontend/']
     })
 );
 
