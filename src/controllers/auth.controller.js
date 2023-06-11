@@ -52,7 +52,7 @@ const signIn = async (req, res) => {
       httpOnly: true,
       maxAge: 1000 * 60 * 180, //3 horas
       secure: true,
-      sameSite: "none",
+      sameSite: "lax",
       path:'/',
     })
 
@@ -128,6 +128,8 @@ const getProfile = (req, res) => {
     return res.status(400).json(error);;
   }
 };
+
+
 
 //Exportación de cada función de Auth
 module.exports = { signUp, signIn, logout, getProfile };
